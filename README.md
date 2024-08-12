@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project showcases the management, streamline and data analysis of E-commerce data
+This project showcases the management, streamline and data analysis of E-commerce data using Azure & Databricks
 
 ## Project Goals
 
-1. Data Ingestion:
+### 1. Data Ingestion:
 
 - Objective: Build a robust ingestion pipeline to extract data from various data sources into a centralized data lake.
 - Tools & Technologies: Azure Data Factory will be used as the primary orchestration tool to connect to various data sources, such as on-premises databases, cloud-based storage systems, or APIs.
@@ -14,7 +14,7 @@ This project showcases the management, streamline and data analysis of E-commerc
 Azure Data Factory will be configured to extract data from csv files on a scheduled basis.
 The ingested data will be loaded into the Bronze layer of the data lake (Raw Data), following the Medallion Architecture.
 
-2. ETL System (Extract, Transform, Load):
+### 2. ETL System (Extract, Transform, Load):
 
 - Objective: Transform the ingested raw data into parquet file format, ensuring data quality, consistency, and readiness for analysis.
 - Tools & Technologies: Azure Databricks and Apache Spark will be utilized for processing and transforming the data.
@@ -23,7 +23,7 @@ Data from the Bronze layer will be processed and cleaned in Azure Databricks, ap
 The transformed data will be loaded into the Silver layer (Cleaned & Enriched Data) and further into the Gold layer (Aggregated & Business-Ready Data) in the data lake.
 The Silver layer stores structured data, while the Gold layer holds aggregated data that is optimized for reporting and analysis.
 
-3. Store Data:
+### 3. Store Data:
 
 - Objective: Efficiently store the transformed and aggregated data for long-term storage and high-performance querying.
 - Tools & Technologies: Azure Data Lake Storage and Delta Lake.
@@ -31,7 +31,7 @@ The Silver layer stores structured data, while the Gold layer holds aggregated d
 The processed data will be stored as Delta Tables in the data lake, ensuring scalability, reliability, and ACID compliance.
 The Bronze, Silver, and Gold layers in the Medallion Architecture will be used to manage different stages of data processing.
 
-4. Reporting:
+### 4. Reporting:
 
 - Objective: Build an interactive dashboard to provide insights and answers to key business questions.
 - Tools & Technologies: Power BI will be connected to the Gold layer for data visualization and reporting.
@@ -52,6 +52,6 @@ https://data.world/jfreex/e-commerce-users-of-a-french-c2c-fashion-store
 
 ## Sample Dashboard
 
-After connecting Azure Databricks to PowerBI, a sample dashboard is created to check that the data streamlined correctly and are automatically refreshing. 
+#### After connecting Azure Databricks to PowerBI, a sample dashboard is created to check that the data streamlined correctly and are automatically refreshing. 
 
 <img src="Dashboard.png">
