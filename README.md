@@ -53,3 +53,5 @@ https://data.world/jfreex/e-commerce-users-of-a-french-c2c-fashion-store
 ## Sample Dashboard
 
 After connecting Azure Databricks to PowerBI, a sample dashboard is created to check that the data streamlined correctly and are automatically refreshing. 
+
+<img src="Dashboard.png">
