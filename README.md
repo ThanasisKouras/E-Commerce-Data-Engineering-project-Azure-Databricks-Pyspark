@@ -6,7 +6,7 @@ This project showcases the management, streamline and data analysis of E-commerc
 
 ## Project Goals
 
-1.Data Ingestion:
+1. Data Ingestion:
 
 Objective: Build a robust ingestion pipeline to extract data from various data sources into a centralized data lake.
 Tools & Technologies: Azure Data Factory will be used as the primary orchestration tool to connect to various data sources, such as on-premises databases, cloud-based storage systems, or APIs.
@@ -22,9 +22,10 @@ Process:
 Data from the Bronze layer will be processed and cleaned in Azure Databricks, applying necessary transformations.
 The transformed data will be loaded into the Silver layer (Cleaned & Enriched Data) and further into the Gold layer (Aggregated & Business-Ready Data) in the data lake.
 The Silver layer stores structured data, while the Gold layer holds aggregated data that is optimized for reporting and analysis.
-Store Data:
 
-3. Objective: Efficiently store the transformed and aggregated data for long-term storage and high-performance querying.
+3. Store Data:
+
+Objective: Efficiently store the transformed and aggregated data for long-term storage and high-performance querying.
 Tools & Technologies: Azure Data Lake Storage and Delta Lake.
 Process:
 The processed data will be stored as Delta Tables in the data lake, ensuring scalability, reliability, and ACID compliance.
